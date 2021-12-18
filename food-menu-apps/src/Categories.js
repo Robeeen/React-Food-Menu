@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Categories() {
+const Categories = ({filterItems}) => {
     return (
-        <div>
-            This is Categories.
+        <div className='btn-container'>
+           <button className='filter-btn' onClick={() => filterItems('breakfast')}>BreakFast</button>
         </div>
     )
 }
